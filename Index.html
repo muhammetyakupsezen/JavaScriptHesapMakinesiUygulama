@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Main.css" />
+    <title></title>
+</head>
+
+
+<body>
+    <center>
+        <div class="MainDiv">
+            <table class="Table">
+                <tr>
+                    <td colspan="3"> <input type="text"  style="width:100%; border : solid 2px #ff6a00; text-align:right; font-family : Verdana;
+                            font-size: medium; background-color:#e1ebe7" id="TxtSonuc" readonly />
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="button" id="Btn1" value="1" class="Buttons" tag="Erkek"  onclick="RakamEkle('1');" /></td>
+                    <td><input type="button" id="Btn2" value="2" class="Buttons" onclick="RakamEkle('2');" /></td>
+                    <td><input type="button" id="Btn3" value="3" class="Buttons" onclick="RakamEkle('3');" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" id="Btn4" value="4" class="Buttons" onclick="RakamEkle('4');" /></td>
+                    <td><input type="button" id="Btn5" value="5" class="Buttons" onclick="RakamEkle('5');" /></td>
+                    <td><input type="button" id="Btn6" value="6" class="Buttons" onclick="RakamEkle('6');" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" id="Btn7" value="7" class="Buttons" onclick="RakamEkle('7');" /></td>
+                    <td><input type="button" id="Btn8" value="8" class="Buttons" onclick="RakamEkle('8');" /></td>
+                    <td><input type="button" id="Btn9" value="9" class="Buttons" onclick="RakamEkle('9');" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" id="Btn0" value="0" class="Buttons" onclick="RakamEkle('0');" /></td>
+                    <td><input type="button" id="BtnArti" value="+" class="Buttons"  onclick="IslemSec('+');"/></td>
+                    <td><input type="button" id="BtnEksi" value="-" class="Buttons" onclick="IslemSec('-');" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" id="BtnBolu" value="/" class="Buttons" onclick="IslemSec('/');" /></td>
+                    <td><input type="button" id="BtnCarpi" value="*" class="Buttons" onclick="IslemSec('*');" /></td>
+                    <td><input type="button" id="BtnVirgul" value="," class="Buttons" onclick="RakamEkle(',');" /></td>
+                </tr>
+
+                <tr>
+                    <td colspan="1"></td>
+                    <td colspan="1"><input type="button" id="BtnSil" value="C" class="Buttons" onclick="Sil();" /></td>
+                    <td colspan="1"><input type="button" id="BtnEsittir" value="=" class="Buttons" onclick="SonucHesap();" /></td>
+                </tr>
+
+
+            </table>
+        </div>
+    </center>
+
+
+    <script type="text/javascript" src="Main.js">       
+    </script>
+
+
+</body>
+</html>
